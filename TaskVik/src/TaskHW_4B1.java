@@ -5,9 +5,14 @@ public class TaskHW_4B1 {
 
 
         Scanner scanner = new Scanner(System.in);
+
+        float timeSec;
+        float mps,kph;
+
         System.out.print("Input distance in meters: ");
 
         float meters=scanner.nextFloat();
+
         System.out.print("Input hour: ");
 
         float hours = scanner.nextFloat();
@@ -19,7 +24,11 @@ public class TaskHW_4B1 {
         float seconds=scanner.nextFloat();
         float result=(hours*3600)+(minutes*60)+seconds;
 
-        System.out.println("Your speed in meters per second (meters/second) is "+(meters/result));
-        System.out.println("Your speed in kilometers per hour (km/h) is "+(meters*3600)/(result*1000));
+        timeSec = (hours*3600) + (minutes*60) + seconds;
+        mps = meters / timeSec;
+        kph = ( meters/1000.0f ) / ( timeSec/3600.0f );
+
+        System.out.println("Your speed in meters per second (meters/second) is "+ mps);
+        System.out.println("Your speed in kilometers per hour (km/h) is "+ kph);
     }
 }

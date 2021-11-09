@@ -2,12 +2,13 @@ import java.util.Scanner;
 
 public class TaskHM_1 {
     public static void main( String[] args ) {
-        System.out.println("Input a value for inch: ");
+
         Scanner scanner=new Scanner(System.in);
-        int inch ;
-        inch = scanner.nextInt();
+        System.out.print("Input a value for inch: ");
+        double inch ;
+        inch = scanner.nextDouble();
         double meter;
         meter = inch *  0.0254;
-        System.out.println(inch + ".0 inch is " + meter + " meters");
+        System.out.println(inch + " inch is " + meter + " meters");
     }
 }

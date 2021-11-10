@@ -11,9 +11,10 @@ public class CheckOddEven {
 //        int number=26;
 
         if (number % 2 == 0){
-            System.out.println(number + " Even Number " + "BYE");
+            System.out.println(number + " Even Number");
         } else {
-            System.out.println(number + " Odd Numbe " + "BYE");
+            System.out.println(number + " Odd Numbe");
         }
+        System.out.println("BYE");
     }
 }

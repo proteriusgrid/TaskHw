@@ -13,9 +13,9 @@ public class CheckPassFail {
 
 
         if (mark>=50){
-            System.out.println("PASS"+" Done");
+            System.out.println("PASS"+" DONE");
         }else {
-            System.out.println("FAIL"+" Done");
+            System.out.println("FAIL"+" DONE");
         }
 
     }

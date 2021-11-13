@@ -7,12 +7,9 @@ public class CheckPassFail {
 
         Scanner sc= new Scanner(System.in);
         System.out.print("mark: ");
-
         int mark = sc.nextInt();
-//        int  mark= 48;
 
-
-        if (mark>=50){
+        if (mark >= 50){
             System.out.println("PASS");
         }else {
             System.out.println("FAIL");

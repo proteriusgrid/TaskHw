@@ -15,18 +15,16 @@ public class TaskHW_5   {
 
         System.out.print("b = ");
         int b=sc.nextInt();
-//        int a=0;
-//        int b=0;
 
-
-        int x=-b%a;
+        double x;
 
         if (a == 0){
-            System.out.println(x);
+            System.out.println("x is not defined");
         }else if (b == 0){
-            System.out.println(x);
-        }else {
-            System.out.println(x);
+            System.out.println("x = 0");
+        }else  {
+            x=-b / a;
+            System.out.println("x= " + x);
         }
     }
 }

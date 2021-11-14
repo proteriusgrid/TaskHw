@@ -12,13 +12,13 @@ public class TaskHW_4 {
         int y=sc.nextInt();
 
         if (x > y){
-            System.out.println("The number x has the greatest value.");
+            System.out.println("The number " + x + " has the greatest value.");
 
         }else if (x < y){
-            System.out.println("The number x has the lowest value.");
+            System.out.println("The number " + x + " has the lowest value.");
 
         }else {
-            System.out.println("The numbers x and y are equal.");
+            System.out.println("The numbers " + x + " and " + y + " are equal.");
         }
 
     }

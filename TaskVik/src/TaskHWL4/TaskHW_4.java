@@ -1,20 +1,48 @@
 package TaskHWL4;
 
-import java.util.Arrays;
-
 public class TaskHW_4 {
-    public static void main( String[] args ) {
 
-        int [] array = {1, 4, 30, 50, 20, 8, 9, 18};
-        Arrays.sort(array);
-
-        int[] minimumMaximumSorted= new int[array.length];
-        for (int i = 0, min = 0, max = array.length - 1; i < array.length; i += 2, min++, max--){
-            minimumMaximumSorted[i] = array[min];
-            if (i + 1<minimumMaximumSorted.length){
-                minimumMaximumSorted[i +1] = array[max];
-            }
-        }
-        System.out.println(Arrays.toString(minimumMaximumSorted));
+    public static void main(String args[])
+    {
+        int array[] = { 55, 34, 26, 13, 21, 9, 72 };
+        int n = array.length;
+        bubbleSort(array);
+        System.out.println("Sorted array: ");
+        printArray(array, array.length);
     }
+    static void bubbleSort(int array[])
+    {
+        int i, j, temp;
+        boolean swapped;
+        for (i = 0; i < array.length - 1; i++)
+        {
+            swapped = false;
+            for (j = 0; j < array.length - i - 1; j++)
+            {
+                if (array[j] > array[j + 1])
+                {
+
+                    temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+                    swapped = true;
+                }
+            }
+
+            if (swapped == false)
+                break;
+        }
+    }
+
+    static void printArray(int array[], int size)
+    {
+        int i;
+        for (i = 0; i < size; i++)
+            System.out.print(array[i] + " ");
+        System.out.println();
+    }
+
+
+
 }
+

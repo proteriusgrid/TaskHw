@@ -9,6 +9,7 @@ public class TaskHW_2 {
         System.out.println("Original array: ");
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
+            System.out.println(" ");
         }
 
         System.out.println("Array in reverse order: ");

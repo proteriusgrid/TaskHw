@@ -1,7 +1,6 @@
 package TaskHWL4;
 
 public class TaskHW_4 {
-
     public static void main(String args[])
     {
         int array[] = { 55, 34, 26, 13, 21, 9, 72 };
@@ -10,7 +9,8 @@ public class TaskHW_4 {
         System.out.println("Sorted array: ");
         printArray(array, array.length);
     }
-    static void bubbleSort(int array[])
+
+    public static void bubbleSort( int array[] )
     {
         int i, j, temp;
         boolean swapped;
@@ -34,7 +34,7 @@ public class TaskHW_4 {
         }
     }
 
-    static void printArray(int array[], int size)
+    public static void printArray(int array[], int size)
     {
         int i;
         for (i = 0; i < size; i++)

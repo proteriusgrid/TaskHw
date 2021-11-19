@@ -12,18 +12,18 @@ public class TaskHW_3 {
         System.out.print("Enter array size : ");
         size = sc.nextInt();
 
-        int nmberArray [] = new int[size];
+        int numberArray [] = new int[size];
 
         System.out.print("Enter array elements : ");
         for (i = 0; i <size; i++ ){
-            nmberArray[i]= sc.nextInt();
+            numberArray[i]= sc.nextInt();
         }
         System.out.println("Searching for the Smallest Element....\\n\\n");
 
-        minValue=nmberArray[0];
+        minValue=numberArray[0];
         for (i = 0; i < size; i++ ){
-            if (minValue > nmberArray[i]){
-                minValue = nmberArray[i];
+            if (minValue > numberArray[i]){
+                minValue = numberArray[i];
             }
         }
         System.out.println("Smallest Element = " + minValue);

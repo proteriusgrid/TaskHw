@@ -1,25 +1,18 @@
 package TaskHWL5;
 import java.io.*;
+
+
 public class TaskLes_3 {
     public static void main(String[] args)
     {
-        // An integer array storing the returned array
-        // from the method
-        int[] storage = methodReturningArray();
 
-        // Printing the elements of the array
-        for (int i = 0; i < storage.length; i++)
-            System.out.print(storage[i] + " ");
+        // character whose ASCII value to be found
+        char ch1 = 'a';
+        char ch2 = 'A';
+        // variable that stores the integer value of the character
+        int asciivalue1 = ch1;
+        int asciivalue2 = ch2;
+        System.out.println("The ASCII value of " + ch1 + " is: " + asciivalue1);
+        System.out.println("The ASCII value of " + ch2 + " is: " + asciivalue2);
     }
-
-    // Method 2
-    // Returning an integer array
-    public static int[] methodReturningArray()
-    {
-        int[] sample = { 1, 2, 3, 4 };
-
-        // Return statement of the method.
-        return sample;
-    }
-
 }

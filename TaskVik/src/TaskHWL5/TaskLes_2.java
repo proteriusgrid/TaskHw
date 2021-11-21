@@ -12,14 +12,10 @@ public class TaskLes_2 {
         return sum;
     }
 
-    // Driver code
     public static void main(String[] args)
     {
         int array[] = {12, 3, 4, 15};
         int n = array.length;
-
-        // calling accumulate function, passing first, last element and
-        // initial sum, which is 0 in this case.
         System.out.print("Sum of given array is " +  accumulate(array));
     }
 

@@ -3,7 +3,6 @@ package TaskHWL5;
 public class TaskHW_2 {
 
     static void printArr( int array[] ) {
-
         System.out.println("Array in reverse order: ");
 
         for (int i = array.length-1; i >= 0; i--) {

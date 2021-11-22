@@ -24,9 +24,10 @@ public class TaskHW_4 {
         }
     }
 
-     static void printArray( int array[], int size )
+     static void printArray( int array[])
     {
         int i;
+        int size = array.length;
         for (i = 0; i < size; i++)
             System.out.print(array[i] + " ");
         System.out.println();
@@ -37,7 +38,7 @@ public class TaskHW_4 {
         int n = array.length;
         bubbleSort(array);
         System.out.println("Sorted array: ");
-        printArray(array, array.length);
+        printArray(array);
     }
 
 

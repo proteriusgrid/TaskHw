@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class TaskHW_3 {
 
-
     static void numberArray( int numberArray[], int size ){
         int i;
         int minValue;
@@ -21,7 +20,6 @@ public class TaskHW_3 {
     public static void main( String[] args ) {
         int i;
         int size;
-        int minValue;
 
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter array size : ");

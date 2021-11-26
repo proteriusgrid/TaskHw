@@ -3,10 +3,8 @@ import java.util.*;
 public class TaskHW2 {
     public static void prCharWithFreq(String s)
     {
-    // Store all characters and
-    // their frequencies in dictionary
-    Map<Character, Integer> d = new HashMap<Character, Integer>();
 
+    Map<Character, Integer> d = new HashMap<Character, Integer>();
 
         for(int i = 0; i < s.length(); i++)
     {
@@ -20,15 +18,11 @@ public class TaskHW2 {
         }
     }
 
-    // Print characters and their
-    // frequencies in same order
-    // of their appearance
+
         for(int i = 0; i < s.length(); i++)
     {
 
-        // Print only if this
-        // character is not printed
-        // before
+
         if(d.get(s.charAt(i)) != 0)
         {
             System.out.print(s.charAt(i));

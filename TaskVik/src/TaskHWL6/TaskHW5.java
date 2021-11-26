@@ -1,5 +1,7 @@
 package TaskHWL6;
 
+import java.util.Scanner;
+
 public class TaskHW5 {
     static void removeChar(String string, char c)
     {
@@ -27,7 +29,12 @@ public class TaskHW5 {
     // Driver Code
     public static void main(String[] args)
     {
-        String string = "Hello world ";
+        System.out.print("Input string: ");
+        Scanner scanner = new Scanner(System.in);
+        String string= scanner.next();
+
+        char []k = string.toCharArray();
+//        String string = "Hello world ";
         removeChar(string, 'l');
     }
 }

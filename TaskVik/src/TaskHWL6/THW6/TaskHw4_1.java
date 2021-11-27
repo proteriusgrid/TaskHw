@@ -10,6 +10,7 @@ public class TaskHw4_1 {
 //    FileInputStream fileInputStream = new FileInputStream(file);
 //    InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
 //    BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+
         Scanner str = new Scanner(System.in);  // Create a Scanner object
         System.out.println("Enter string:");
 
@@ -20,12 +21,13 @@ public class TaskHw4_1 {
 //        String value= scanner.next();
 //
 //        char[] array = value.toCharArray();
+
     String line;
     int wordCount = 0;
     int characterCount = 0;
     int paraCount = 0;
 //    int whiteSpaceCount = 0;
-//    int sentenceCount = 0;
+    int sentenceCount = 0;
 
         while ((line = str.nextLine()) != null) {
         if (line.equals("")) {
@@ -36,8 +38,9 @@ public class TaskHw4_1 {
             String words[] = line.split("\\s+");
             wordCount += words.length;
 //            whiteSpaceCount += wordCount - 1;
+
             String sentence[] = line.split("[!?.:]+");
-//            sentenceCount += sentence.length;
+            sentenceCount += sentence.length;
         }
     }
         if (sentenceCount >= 1) {

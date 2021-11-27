@@ -11,26 +11,25 @@ public class TaskHw1 {
             System.out.println("Please enter the word:");
             String word = reader.readLine();
 
-            System.out.println(upToCase(word));
-            System.out.println(lowToCase(word));
+            System.out.println(toUperCase(word));
+            System.out.println(toLowCase(word));
 
             System.out.println("Please enter the sentence:");
             String sent = reader.readLine();
-            System.out.println(upToEachWord(sent));
+            System.out.println(toCapitalCase(sent));
 
         }
-
-        public static String upToCase(String word){
+        public static String toUperCase(String word){
             word = word.toUpperCase();
             return word;
         }
 
-        public static String lowToCase(String word){
+        public static String toLowCase(String word){
             word = word.toLowerCase();
             return word;
         }
 
-        public static String upToEachWord(String sent){
+        public static String toCapitalCase(String sent){
             String[] list = sent.split(" ");
             String result = "";
             for (int i = 0; i < list.length; i++){

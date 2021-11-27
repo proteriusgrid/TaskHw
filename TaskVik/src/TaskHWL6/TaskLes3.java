@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.Random;
 public class TaskLes3 {
 
-    // Version 1.0
+    // Version 1.0 ???
     private static final String dCase = "abcdefghijklmnopqrstuvwxyz";
     private static final String uCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     private static final String sChar = "!@#$%^&*";

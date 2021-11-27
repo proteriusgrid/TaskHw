@@ -38,7 +38,7 @@ public class TaskHW6 {
 
     public static String randomString() {
         String newString = "";
-        String str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        String str1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         String str2 = "0123456789";
         String sTemp1 = "";
         String sTemp2 = "";
@@ -50,7 +50,7 @@ public class TaskHW6 {
         int temp2 = 0;
         int temp3 = 0;
         for (int i = 0; i < 2; i++) {
-            newString += str.charAt((int) (Math.random() * str.length() + 0));
+            newString += str1.charAt((int) (Math.random() * str1.length() + 0));
         }
 
         for (int i = 0; i < 1; i++) {
@@ -58,7 +58,7 @@ public class TaskHW6 {
             newString += sTemp1;
         }
         for (int i = 0; i < 3; i++) {
-            newString += str.charAt((int) (Math.random() * str.length() + 0));
+            newString += str1.charAt((int) (Math.random() * str1.length() + 0));
         }
         for (int i = 0; i < 1; i++) {
             sTemp2 += str2.charAt((int) (Math.random() * str2.length() + 0));
@@ -69,28 +69,28 @@ public class TaskHW6 {
             newString += sTemp3;
         }
         for (int i = 0; i < 2; i++) {
-            newString += str.charAt((int) (Math.random() * str.length() + 0));
+            newString += str1.charAt((int) (Math.random() * str1.length() + 0));
         }
         for (int i = 0; i < 1; i++) {
             sTemp4 += str2.charAt((int) (Math.random() * str2.length() + 0));
             newString += sTemp4;
         }
         for (int i = 0; i < 2; i++) {
-            newString += str.charAt((int) (Math.random() * str.length() + 0));
+            newString += str1.charAt((int) (Math.random() * str1.length() + 0));
         }
         for (int i = 0; i < 1; i++) {
             sTemp5 += str2.charAt((int) (Math.random() * str2.length() + 0));
             newString += sTemp5;
         }
         for (int i = 0; i < 3; i++) {
-            newString += str.charAt((int) (Math.random() * str.length() + 0));
+            newString += str1.charAt((int) (Math.random() * str1.length() + 0));
         }
         for (int i = 0; i < 1; i++) {
             sTemp6 += str2.charAt((int) (Math.random() * str2.length() + 0));
             newString += sTemp6;
         }
         for (int i = 0; i < 2; i++) {
-            newString += str.charAt((int) (Math.random() * str.length() + 0));
+            newString += str1.charAt((int) (Math.random() * str1.length() + 0));
         }
         sTemp1 += sTemp2;
         sTemp3 += sTemp4;

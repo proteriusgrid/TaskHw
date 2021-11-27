@@ -19,7 +19,6 @@ public class TaskHW1 {
                     ch[i] = (char)(ch[i] - 'a' + 'A');
                 }
             }
-
             // If apart from first character
             // Any one is in Upper-case
             else if (ch[i] >= 'A' && ch[i] <= 'Z')

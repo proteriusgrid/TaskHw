@@ -11,7 +11,7 @@ public class TaskHw1 {
             System.out.println("Please enter the word:");
             String word = reader.readLine();
 
-            System.out.println(toUperCase(word));
+            System.out.println(toUpperCase(word));
             System.out.println(toLowCase(word));
 
             System.out.println("Please enter the sentence:");
@@ -19,7 +19,7 @@ public class TaskHw1 {
             System.out.println(toCapitalCase(sent));
 
         }
-        public static String toUperCase(String word){
+        public static String toUpperCase(String word){
             word = word.toUpperCase();
             return word;
         }

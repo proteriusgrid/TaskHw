@@ -33,27 +33,30 @@ public class TaskLes3_1 {
 //
 //        System.out.println(generatedString);
 //    }
-
+    int len;
     static final String alphabeticNumeric = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
     static final String alphabetic = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
     static final String numeric = "0123456789";
     static SecureRandom rnd = new SecureRandom();
 
-    static String randomAlphabeticNumericString( int len ){
+    static String randomAlphabeticNumericString( ){
+        int len = 1;
         StringBuilder sb = new StringBuilder(len);
         for(int i = 0; i < len; i++)
             sb.append(alphabeticNumeric.charAt(rnd.nextInt(alphabeticNumeric.length())));
         return sb.toString();
     }
 
-    static String randomAlphabeticString( int len ){
+    static String randomAlphabeticString(){
+        int len = 1;
         StringBuilder sb = new StringBuilder(len);
         for(int i = 0; i < len; i++)
             sb.append(alphabetic.charAt(rnd.nextInt(alphabetic.length())));
         return sb.toString();
     }
 
-    static String randomNumericString( int len ){
+    static String randomNumericString(){
+        int len = 1;
         StringBuilder sb = new StringBuilder(len);
         for(int i = 0; i < len; i++)
             sb.append(numeric.charAt(rnd.nextInt(numeric.length())));
@@ -72,17 +75,17 @@ public class TaskLes3_1 {
         System.out.println(randomNumericString());
     }
 
-    private static long randomNumericString() {
-        return 0;
-    }
+////    private static long randomNumericString() {
+//        return 0;
+//    }
 
-    private static long randomAlphabeticString() {
-        return 0;
-    }
-
-    private static long randomAlphabeticNumericString() {
-        return 0;
-    }
+//    private static long randomAlphabeticString() {
+//        return 0;
+//    }
+//
+//    private static long randomAlphabeticNumericString() {
+//        return 0;
+//    }
 
 
 //    private static String generatedString() {

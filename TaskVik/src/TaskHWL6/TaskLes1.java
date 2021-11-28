@@ -2,16 +2,34 @@ package TaskHWL6;
 
 public class TaskLes1 {
 
-        static void stringData(String name, int age){
+        static void randomString( int mode, int length ) {
 
-            System.out.print(name+ " ");
-            System.out.println(age + " ");
+            if (mode == 1) {
+                System.out.println(mode + " True ");
+            } else {
+                System.out.println(length + " False ");
+            }
+            System.out.println("BYE");
+//
+//            System.out.print(name+ " ");
+//            System.out.println(age + " ");
+
         }
-    public static void main( String[] args ) {
 
-        stringData("John", 30);
-        stringData("Bob", 29);
-        stringData("Sam", 24);
+    public static void main( String[] args) {
+        int mode = (int) ( Math.random() * 2 );
+
+//        System.out.println (a);
+        int length = mode;
+        randomString((int) mode, length);
+
+//        String randomString = new String();
+//        System.out.println("random Number : "+ randomString);
+
     }
-    }
+
+}
+
+
+
 

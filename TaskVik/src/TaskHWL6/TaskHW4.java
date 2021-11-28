@@ -26,11 +26,9 @@ public class TaskHW4 {
     {
 
         // Given String str
-        String str =
-                "One two one      three\n four\tfive "+ "One two  three\n four\tfive ";
+        String str ="One two one three\n four\tfive "+ "One two  three\n four\tfive ";
 
         // Print the result
-        System.out.println("No of words : " +
-                countWords(str));
+        System.out.println("No of words : " +countWords(str));
     }
 }

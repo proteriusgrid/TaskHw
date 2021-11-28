@@ -15,7 +15,7 @@ public class TaskHW3 {
         return count;
     }
     public static void main(String[] args) {
-        String string ="   Hello World Student";
+        String string =" Hello World Student";
         System.out.println(wordCount(string) + " words.");
     }
 }

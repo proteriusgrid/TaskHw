@@ -1,34 +1,31 @@
 package TaskHWL6;
 
+import java.util.Scanner;
+
 public class TaskHW4 {
-    // Function to count total number
-    // of words in the string
-    public static int countWords(String str)
-    {
+    static  String countWordsLength(String string) {
 
-        // Check if the string is null
-        // or empty then return zero
-        if (str == null || str.isEmpty())
-            return 0;
+        String words[] = string.split("\\s+");
+        int wordCount = words.length;
+        System.out.println("Words counter:  " + wordCount);
+        StringBuilder sb = new StringBuilder();
 
-        // Splitting the string around
-        // matches of the given regular
-        // expression
-        String[] words = str.split("\\s+");
+        for (int i = 0; i < words.length; i++) {
+            char[] ch = words[i].toCharArray();;
+            sb.append(words[i] + " : " + ch.length + "\n");
 
-        // Return number of words
-        // in the given string
-        return words.length;
+        }
+        return sb.toString();
     }
 
-    // Driver Code
-    public static void main(String args[])
+    public static void main( String[] args )
     {
+        Scanner str = new Scanner(System.in);
+        System.out.println("Enter string:");
 
-        // Given String str
-        String str ="One two one three\n four\tfive "+ "One two  three\n four\tfive ";
-
-        // Print the result
-        System.out.println("No of words : " +countWords(str));
+        String text = str.nextLine();
+        System.out.println(countWordsLength(text));
     }
 }
+
+

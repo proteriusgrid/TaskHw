@@ -1,40 +1,43 @@
 package TaskHWL6;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class TaskHW1 {
-    static String convert(String string)
-    {
+        public static void main(String[] args) throws IOException {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            System.out.println("Please enter the word:");
+            String word = reader.readLine();
 
-        // Create a char array of given String
-        char ch[] = string.toCharArray();
-        for (int i = 0; i < string.length(); i++) {
+            System.out.println(toUpperCase(word));
+            System.out.println(toLowCase(word));
 
-            // If first character of a word is found
-            if (i == 0 && ch[i] != ' ' ||
-                    ch[i] != ' ' && ch[i - 1] == ' ') {
+            System.out.println("Please enter the sentence:");
+            String sent = reader.readLine();
+            System.out.println(toCapitalCase(sent));
 
-                // If it is in lower-case
-                if (ch[i] >= 'a' && ch[i] <= 'z') {
-
-                    // Convert into Upper-case
-                    ch[i] = (char)(ch[i] - 'a' + 'A');
-                }
-            }
-            // If apart from first character
-            // Any one is in Upper-case
-            else if (ch[i] >= 'A' && ch[i] <= 'Z')
-
-                // Convert into Lower-Case
-                ch[i] = (char)(ch[i] + 'a' - 'A');
+        }
+        public static String toUpperCase(String word){
+            word = word.toUpperCase();
+            return word;
         }
 
-        // Convert the char array to equivalent String
-        String str = new String(ch);
-        return str;
+        public static String toLowCase(String word){
+            word = word.toLowerCase();
+            return word;
+        }
+
+        public static String toCapitalCase(String sent){
+            String[] list = sent.split(" ");
+            String result = "";
+            for (int i = 0; i < list.length; i++){
+                result = result + list[i].substring(0, 1).toUpperCase() + list[i].substring(1) + " ";
+            }
+            return result;
+        }
     }
 
-    public static void main(String[] args)
-    {
-        String string = "hELLO wORLD !!!";
-        System.out.println(convert(string));
-    }
-}
+
+
+

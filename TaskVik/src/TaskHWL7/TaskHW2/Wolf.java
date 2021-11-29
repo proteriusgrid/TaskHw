@@ -1,11 +1,19 @@
 package TaskHWL7.TaskHW2;
 
 public class Wolf{
-    public int method()
-    {
-        return 1;
+
+    private  String color;
+
+    public Wolf(String color){
+        this.color= "Black";
+
     }
 
-//
+    public Wolf() {
+    }
+
+    public String getColor(){
+        return this.color;
+    }
 
 }

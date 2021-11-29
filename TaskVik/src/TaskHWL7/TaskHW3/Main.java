@@ -1,11 +1,11 @@
 package TaskHWL7.TaskHW3;
 
-public class Main extends Cars{
+public class Main extends Car {
     public static void main( String[] args ) {
 
-        Cars cars= new Cars();
-        Cars modelOne = new ModelOne();
-        Cars modelTwo = new ModelTwo();
+        Car cars= new Car();
+        Car modelOne = new ModelOne();
+        Car modelTwo = new ModelTwo();
 
         cars.move();
         modelOne.move();

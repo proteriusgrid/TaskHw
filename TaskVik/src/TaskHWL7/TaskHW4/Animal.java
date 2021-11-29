@@ -7,8 +7,9 @@ public class Animal {
         this.name= a;
 
     }
+
     public String SayHello(){
-        return String.format("The animal %s say hello", this.name);
+        return String.format("The %s say hello", this.name);
     }
     public String getName(){
         return this.name;

@@ -3,33 +3,56 @@ package TaskHWL8;
 import java.util.Scanner;
 
 public class Login {
-    public static void main( String[] args ) {
+    public static void main( String[] args ) throws IllegalAccessException {
 
-        String Username;
-        String Password;
+        String username ;
+        String password;
+        String yes_0r_no;
+        String scann;
+        String passscan;
 
-        Password = "123";
-        Username = "wisdom";
+        Scanner scan = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        Scanner input1 = new Scanner(System.in);
-        System.out.println("Enter Username : ");
-        String username = input1.next();
+        Scanner name = new Scanner(System.in);
+        System.out.println("Username:");
+        username = name.next().toLowerCase();
 
-        Scanner input2 = new Scanner(System.in);
-        System.out.println("Enter Password : ");
-        String password = input2.next();
+        Scanner pass = new Scanner(System.in);
+        System.out.println("Password:");
+        password = pass.next().toLowerCase();
 
-        if (username.equals(Username) && password.equals(Password)) {
 
-            System.out.println("Access Granted! Welcome!");
-        }
+        System.out.println("You are logged in");
 
-        else if (username.equals(Username)) {
-            System.out.println("Invalid Password!");
-        } else if (password.equals(Password)) {
-            System.out.println("Invalid Username!");
-        } else {
-            System.out.println("Invalid Username & Password!");
+        Scanner ask = new Scanner(System.in);
+        System.out.println("Do you want to check this or not(yes or no) :");
+
+        yes_0r_no = ask.next().toLowerCase();
+
+        while (true){
+            if (yes_0r_no.equals("yes")){
+                System.out.println("Username:");
+                scann = scan.next().toLowerCase();
+                if (scann == username) {
+                    continue;
+                }
+                System.out.println("Password");
+                passscan = scanner.next().toLowerCase();
+                if (passscan.equals(password)) {
+                    System.out.println("You are logged in");
+                    break;
+
+                }if (!password.equals(passscan)) {
+                    throw new IllegalAccessException();
+                }
+            }
+
+            if (yes_0r_no.equals("no"))
+                break ;
+
+
+
         }
     }
 }

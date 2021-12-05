@@ -33,25 +33,6 @@ public class Armstrong {
     else return false;
 }
 
-    public static void  main(String args[])
-    {
-        int num;
-        Scanner sc= new Scanner(System.in);
-        System.out.print("Enter the number: ");
-
-        Armstrong armstrong = new Armstrong();
-
-
-        num=sc.nextInt();
-        if(armstrong.isArmstrong(num))
-        {
-            System.out.print("Armstrong number.");
-        }
-        else
-        {
-            System.out.print("Not Armstrong number. ");
-        }
-    }
 
     public void checkArmstrong(){
         int num;
@@ -59,7 +40,6 @@ public class Armstrong {
         System.out.print("Enter the number: ");
 
         Armstrong armstrong = new Armstrong();
-
 
         num=sc.nextInt();
         if(armstrong.isArmstrong(num))

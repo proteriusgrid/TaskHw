@@ -3,7 +3,7 @@ package TaskHWL8;
 import java.util.Arrays;
 
 public class Replace {
-    public static void main( String[] args ) {}
+
 
     public void doReplace() {
         String Str = new String("Welcome Program Hello world ");

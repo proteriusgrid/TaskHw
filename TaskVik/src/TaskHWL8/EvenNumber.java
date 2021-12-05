@@ -5,8 +5,6 @@ import java.util.Scanner;
 
 public class EvenNumber {
 
-    public static void main( String[] args )throws ArithmeticException {
-    }
 
     public  void checkEvenNumber() throws ArithmeticException{
         Scanner sc = new Scanner(System.in).useLocale(Locale.ENGLISH.US);

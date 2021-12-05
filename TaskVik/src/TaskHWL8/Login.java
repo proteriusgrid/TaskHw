@@ -34,30 +34,30 @@ public class Login {
                     evenNumber.checkEvenNumber();
                 }
 
-                if (mode == 2) {
+                else if (mode == 2) {
                     Armstrong armstrong = new Armstrong();
                     armstrong.checkArmstrong();
                 }
-                if (mode == 3) {
+                else if (mode == 3) {
                     Reverse reverse = new Reverse();
                     reverse.doReverse();
                 }
-                if (mode == 4) {
+                else if (mode == 4) {
                     Fibonacci fibonacci = new Fibonacci();
                     fibonacci.doFibonacciNumbers();
 
                 }
-                if (mode == 5) {
+                else if  (mode == 5) {
                     Replace replace = new Replace();
                     replace.doReplace();
 
                 }
-                else{
-                    throw new StringIndexOutOfBoundsException("An attempt was made to use an index outside of a string. ");
+                  else  {
+                    throw new StringIndexOutOfBoundsException("Invalid number entered ");
                 }
 
             }
-            return ;
+
 
         } else if (username.equals(Username)) {
             System.out.println("Invalid Password!");

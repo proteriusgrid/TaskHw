@@ -52,7 +52,7 @@ public class Login {
             fibonacci.printFibonacciNumbers();
 
         }
-        if (mode == 4)
+        if (mode == 5)
 
         {
             Replace replace = new Replace();

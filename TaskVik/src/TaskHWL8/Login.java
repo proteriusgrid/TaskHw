@@ -7,7 +7,8 @@ public class Login {
 
         String Username;
         String Password;
-        int mode = 0;
+        int mode;
+        mode = 0;
         Password = "123456";
         Username = "Student";
 
@@ -60,7 +61,9 @@ public class Login {
 
         }
 
-
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter mode(1 - Even Number ; 2 - Armstrong ; 3 -  Reverse  ; 4 - Fibonacci; 5 - Replace ): ");
+        int mode = sc.nextInt();
 
 
         //        ???????

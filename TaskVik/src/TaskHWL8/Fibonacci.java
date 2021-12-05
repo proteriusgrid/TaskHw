@@ -29,4 +29,7 @@ public class Fibonacci {
         printFibonacciNumbers(n);
 
     }
+
+    public void printFibonacciNumbers() {
+    }
 }

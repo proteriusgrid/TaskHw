@@ -4,62 +4,55 @@ import java.util.Scanner;
 
 public class Armstrong {
 
-    //    public void isArmstrong(String n)
-// char[] s=n.toCharArray();
-//    int size=s.length;
-//    int sum=0;
-//    for(char num:s)
-//    {int temp=1;
-//        int i=Integer.parseInt(Character.toString(num));
-//        for(int j=0;j<=size-1;j++)
-//
-//        { temp *=i;}
-//        sum +=temp;
-//    }
-//    if(sum==Integer.parseInt(n))
-//    {
-//        System.out.println("True");
-//    }
-//    else
-//    {
-//        System.out.println("False");
-//    }
-//}
-//    public static void main(String[] args)
-//    {
-//        Armstrong amrmstrong= new Armstrong();
-//        amrmstrong.isArmstrong("73");
-//        amrmstrong.isArmstrong("371");
-//        amrmstrong.isArmstrong("8208");
-//
-//
-//    }
+    static boolean isArmstrong(int n)
+{
+    int temp;
+    int digits = 0;
+    int last = 0;
+    int sum = 0;
+    temp=n;
 
-public static void main(String[] args) {
-
-    int number ;
-    Scanner sc = new Scanner(System.in);
-    System.out.print("Enter number : ");
-    number= sc.nextInt();
-    int originalNumber;
-    int remainder;
-    int result = 0;
-
-    originalNumber = number;
-
-    while (originalNumber != 0)
+    while(temp > 0)
     {
-        remainder = originalNumber % 10;
-        result += Math.pow(remainder, 3);
-        originalNumber /= 10;
+        temp = temp / 10;
+        digits++;
     }
 
-    if(result == number)
-        System.out.println(number + " is an Armstrong number.");
-    else
-        System.out.println(number + " is not an Armstrong number.");
+    temp = n;
+    while(temp>0)
+    {
+        last = temp % 10;
+        sum +=  (Math.pow(last, digits));
+        temp = temp/10;
+    }
+
+    if(n == sum)
+
+        return true;
+
+    else return false;
+}
+
+    public static void  main(String args[])
+    {
+        int num;
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter the number: ");
+
+        num=sc.nextInt();
+        if(isArmstrong(num))
+        {
+            System.out.print("Armstrong number.");
+        }
+        else
+        {
+            System.out.print("Not Armstrong number. ");
+        }
+    }
 
 
+    public void isArmstrong() {
     }
 }
+
 

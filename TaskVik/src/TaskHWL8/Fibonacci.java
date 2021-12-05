@@ -5,7 +5,9 @@ import java.util.Scanner;
 public class Fibonacci {
     static void printFibonacciNumbers(long n)
     {
-        long f1 = 0, f2 = 1, i;
+        long f1 = 0;
+        long f2 = 1;
+        long  i;
 
         if (n < 1)
             return;
@@ -23,8 +25,7 @@ public class Fibonacci {
         Scanner sc= new Scanner(System.in);
          System.out.print("number: ");
          long n= sc.nextLong();
-////            long n = 12;
-//            System.out.println(Armstrong(n));
+
         printFibonacciNumbers(n);
 
     }

@@ -1,22 +1,34 @@
 package TaskHWL8;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class EvenNumber {
 
-    public static void main( String[] args ) {
-        Scanner sc = new Scanner(System.in);
+    public static void main( String[] args )throws ArithmeticException {
+        Scanner sc = new Scanner(System.in).useLocale(Locale.ENGLISH.US);
         System.out.print("number: ");
-        int number = sc.nextInt();
+       double number = sc.nextDouble();
 
-        if (isEven(number) == true)
-            System.out.print("Even");
-        else
-            System.out.print("Odd");
+            if ((number % 1) == 0) {
+                if (isEven(number) == true) {
+                    System.out.print("Even");
+                }else {
+                    System.out.print("Odd");
+                }
+
+            } else  {
+                throw new ArithmeticException("The number entered is not an integer. ");
+            }
     }
 
-    public static boolean isEven(int number) {
 
+    public static boolean isEven(double number)   {
         return (number % 2 == 0);
+
+    }
+
+
+    public void isEven() {
     }
 }

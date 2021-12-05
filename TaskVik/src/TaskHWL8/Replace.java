@@ -3,8 +3,9 @@ package TaskHWL8;
 import java.util.Arrays;
 
 public class Replace {
-    public static void main( String[] args ) {
+    public static void main( String[] args ) {}
 
+    public void doReplace() {
         String Str = new String("Welcome Program Hello world ");
 
         System.out.print("After replacing all a with @ and  o with 0 : ");
@@ -12,11 +13,6 @@ public class Replace {
         if (Str.length() < 30) {
             System.out.println(Str.replace('a', '@').replace('o', '0'));
         }
-
-//
-    }
-
-    public static void main() {
     }
 }
 

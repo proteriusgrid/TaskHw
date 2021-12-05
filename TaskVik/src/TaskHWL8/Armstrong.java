@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Armstrong {
 
-    static boolean isArmstrong(int n)
+    public boolean isArmstrong(int n)
 {
     int temp;
     int digits = 0;
@@ -39,8 +39,11 @@ public class Armstrong {
         Scanner sc= new Scanner(System.in);
         System.out.print("Enter the number: ");
 
+        Armstrong armstrong = new Armstrong();
+
+
         num=sc.nextInt();
-        if(isArmstrong(num))
+        if(armstrong.isArmstrong(num))
         {
             System.out.print("Armstrong number.");
         }
@@ -50,9 +53,26 @@ public class Armstrong {
         }
     }
 
+    public void checkArmstrong(){
+        int num;
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter the number: ");
 
-    public void isArmstrong() {
+        Armstrong armstrong = new Armstrong();
+
+
+        num=sc.nextInt();
+        if(armstrong.isArmstrong(num))
+        {
+            System.out.print("Armstrong number.");
+        }
+        else
+        {
+            System.out.print("Not Armstrong number. ");
+        }
+
     }
+
 }
 
 

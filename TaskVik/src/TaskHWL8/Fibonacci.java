@@ -22,14 +22,16 @@ public class Fibonacci {
     }
 
     public static void main( String[] args ) {
-        Scanner sc= new Scanner(System.in);
-         System.out.print("number: ");
-         long n= sc.nextLong();
 
-        printFibonacciNumbers(n);
 
     }
 
-    public void printFibonacciNumbers() {
+    public void doFibonacciNumbers() {
+
+        Scanner sc= new Scanner(System.in);
+        System.out.print("number: ");
+        long n= sc.nextLong();
+
+        printFibonacciNumbers(n);
     }
 }

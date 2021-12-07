@@ -8,6 +8,7 @@ public class Reader {
     private String phoneNumber;
 
     public Reader(String fio, int numberTicket, String faculty, String dob, String phoneNumber) {
+
         this.fio = fio;
         this.numberTicket = numberTicket;
         this.faculty = faculty;
@@ -57,13 +58,16 @@ public class Reader {
     }
 
     public void setPhone(String phone) {
+
         this.phoneNumber = phone;
     }
     public void takeBook(int numberTicket) {
-        System.out.println(this.fio + " took " + numberTicket + " books .");
+
+        System.out.println(this.fio + " took " + numberTicket + " books.");
     }
 
     public void takeBook(String... books) {
+
         System.out.println(this.fio + " took the following books: ");
         for (String book : books) {
             System.out.println(book);
@@ -100,13 +104,8 @@ public class Reader {
     }
 
     public String getInfo() {
-        return "{" +
-                "fio='" + fio + '\'' +
-                ", number=" + numberTicket +
-                ", faculty='" + faculty + '\'' +
-                ", dob='" + dob + '\'' +
-                ", phone='" + phoneNumber + '\'' +
-                '}';
+        return "{" + "fio='" + fio + '\'' + ", number=" + numberTicket + ", faculty='" + faculty + '\'' + ", dob='" + dob + '\'' +
+                ", phone='" + phoneNumber + '\'' + '}';
     }
 
 

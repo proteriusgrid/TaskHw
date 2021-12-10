@@ -122,8 +122,8 @@ public class Reader {
     }
 
     public String getInfo(){
-        return "{" + "brand" + brand + '\'' + ", number Car = " +numberCar+ ", model" + model +'\''  +", year of manufacture" + yearOfManufacture+ '\''
-        + ", phone='" + phoneNumber + '\'' +"engine capacity" + engineCapacity+ '\'' +"body type" + bodyType+ "color"+ color +'}';
+        return "{" + "brand " + brand + '\'' + ", number Car = " +numberCar+ ", model " + model +'\''  +", year of manufacture = " + yearOfManufacture+ '\''
+        + ", phone = '" + phoneNumber + '\'' +", engine capacity = " + engineCapacity+ '\'' +", body type = " + bodyType+ '\''+ ", color - "+ color + '\''+'}';
     }
 
 }

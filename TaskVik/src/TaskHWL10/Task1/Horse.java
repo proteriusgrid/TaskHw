@@ -44,14 +44,14 @@ public class Horse extends Animal {
 //        return Double.compare(horse.weight, weight) == 0;
 //    }
 
-    @Override
-    public int hashCode() {
-        int result = super.hashCode();
-        long temp;
-        temp = Double.doubleToLongBits(weight);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        return result;
-    }
+//    @Override
+//    public int hashCode() {
+//        int result = super.hashCode();
+//        long temp;
+//        temp = Double.doubleToLongBits(weight);
+//        result = 31 * result + (int) (temp ^ (temp >>> 32));
+//        return result;
+//    }
 
     @Override
     public String toString() {

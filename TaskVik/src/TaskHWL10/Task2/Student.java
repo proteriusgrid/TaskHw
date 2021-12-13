@@ -1,12 +1,12 @@
 package TaskHWL10.Task2;
 
-public class Student {
+public class Student  {
     String firstName;
     String lastName;
     String group;
     double averageMark;
 
-    public Student (   String firstName, String lastName, String group, double averageMark){
+    public Student  (   String firstName, String lastName, String group, double averageMark){
 
         this.firstName = firstName;
         this.lastName = lastName;

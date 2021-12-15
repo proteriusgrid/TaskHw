@@ -1,6 +1,6 @@
 package TasksHWLOther.AutoService;
 
-public class Car {
+public class Car extends Owner {
     private String brand;
     private int numberCar;
     private String model;
@@ -9,6 +9,7 @@ public class Car {
     private double engineCapacity;
     private String bodyType;
     private String color;
+
 
     public Car( String brand, int numberCar, String model, String yearOfManufacture, String phoneNumber, double engineCapacity, String bodyType, String color){
 
@@ -20,6 +21,7 @@ public class Car {
         this.engineCapacity =engineCapacity;
         this.bodyType = bodyType;
         this.color = color;
+
     }
     public Car(){
 
@@ -88,7 +90,8 @@ public class Car {
     }
 
     public void takeOwner(String... owners){
-        System.out.println(this.brand + "took the following owners: ");
+//        System.out.println(this.brand + "took the following owners: ");
+        System.out.println(this.getCarOwner()+ " the cars were taken from the following owners:  ");
         for (String owner : owners){
             System.out.println(owner);
         }
@@ -96,9 +99,9 @@ public class Car {
     }
 
     public void takeOwner( Owner... owners ){
-        System.out.println(this.brand + " took the following owner:");
+        System.out.println(this.brand + " took from the next owner :");
         for (Owner owner : owners){
-            System.out.println(owner.getName()+ ", Car Owner - " + owner.getCarOwner());
+            System.out.println( "Car Owner - " + owner.getCarOwner());
         }
         System.out.println();
     }
@@ -106,7 +109,7 @@ public class Car {
         System.out.println(this.brand + "returned " + numberCar + "owners");
     }
     public void returnOwner(String... owners){
-        System.out.println(this.brand + "returned the following services:  ");
+        System.out.println(this.brand + "returned to the following owners: ");
         for (String owner : owners){
             System.out.println(owner);
         }
@@ -114,9 +117,9 @@ public class Car {
     }
 
     public void returnOwner( Owner... owners ){
-        System.out.println(this.brand + " returned the following owners: ");
+        System.out.println(this.brand + "the car was returned to the owner as follows:  ");
         for (Owner owner : owners){
-            System.out.println(owner.getName()+ ", Car Owner - " + owner.getCarOwner());
+            System.out.println("Car Owner - " + owner.getCarOwner());
         }
         System.out.println();
     }

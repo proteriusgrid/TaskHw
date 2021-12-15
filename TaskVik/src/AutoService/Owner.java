@@ -1,11 +1,11 @@
 package TasksHWLOther.AutoService;
 
-public class Owner {
-    private String name;
+public class Owner  {
+//    private String name;
     private String carOwner;
 
     public Owner( String name, String carOwner) {
-        this.name = name;
+//        this.name = name;
         this.carOwner = carOwner;
 
     }
@@ -13,13 +13,13 @@ public class Owner {
 
     }
 
-    public String getName() {
-        return name;
-    }
+//    public String getName() {
+//        return name;
+//    }
 
-    public void setName( String name ) {
-        this.name = name;
-    }
+//    public void setName( String name ) {
+//        this.name = name;
+//    }
 
     public String getCarOwner() {
         return carOwner;
@@ -31,6 +31,7 @@ public class Owner {
 
     public String getInfo() {
 
-        return "{" + " name = " + name + '\'' + ", Car Owner = " + carOwner + '\'' + '}';
+        return "{" + "Car Owner = " + carOwner + '\'' + '}';
     }
 }
+// + " name = " + name + '\''

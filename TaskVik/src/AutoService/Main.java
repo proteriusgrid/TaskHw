@@ -9,30 +9,33 @@ public class Main {
 
         Car[] cars = {car1, car2, car3};
 
-        Owner owner1 = new Owner("ford f-150 ", " Bob ");
-        Owner owner2 = new Owner("ford mustang gt500 ", " Max ");
-        Owner owner3 = new Owner("Audi R8 ", " John ");
+        Owner owner1 = new Owner("","Bob");
+        Owner owner2 = new Owner("","Max");
+        Owner owner3 = new Owner("", "John ");
+
         Owner[] owners ={owner1, owner2, owner3};
 
         printCar(cars);
         printOwner(owners);
 
 
-        car1.takeOwner(" Emma"," Mia");
-        car2.takeOwner("Sergii  ", "Bob");
-        car3.takeOwner(owner1, owner2, owner3);
 
-        car1.returnOwner(2);
-        car2.returnOwner("McLaren Speedtail, www");
-        car3.returnOwner(owner3);
+        car1.returnOwner("Emma");
+        car2.returnOwner("Sergii ");
+        car3.returnOwner(owner1, owner2);
+
+        car1.returnOwner("Emma", "John" );
+        car2.returnOwner("Jack", "Mike");
+        car3.returnOwner(owner2 + " ");
 
     }
 
 
     private static void printOwner( Owner... owners ){
-        System.out.println("Take a Owner : ");
+        System.out.println("Cars taken from such owners : ");
         for (Owner owner : owners){
-            System.out.println(owner.getInfo());
+//            System.out.println(owner.getInfo());
+              System.out.println(owner.getCarOwner());
         }
         System.out.println();
     }

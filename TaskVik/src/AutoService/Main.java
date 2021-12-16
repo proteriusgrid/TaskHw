@@ -1,7 +1,7 @@
 package TasksHWLOther.AutoService;
 
-public class Main {
-    public static void main( String[] args ) {
+public class Main  extends  Owner{
+    public static void main( String[] args )  {
 
         Car car1 = new Car("VW " , 1234,"T5","2004","380912345678", 2.5 ,"Minibus","White");
         Car car2 = new Car("BMW " , 1002,"M3","2021","380922345678", 3.0 ,"Coupe","Red");
@@ -9,9 +9,9 @@ public class Main {
 
         Car[] cars = {car1, car2, car3};
 
-        Owner owner1 = new Owner("","Bob");
-        Owner owner2 = new Owner("","Max");
-        Owner owner3 = new Owner("", "John ");
+        Owner owner1 = new Owner("VW"," Bob ");
+        Owner owner2 = new Owner("BMW "," Max ");
+        Owner owner3 = new Owner("Ford ", " John ");
 
         Owner[] owners ={owner1, owner2, owner3};
 
@@ -19,14 +19,14 @@ public class Main {
         printOwner(owners);
 
 
+        owner1.takeCar(car1);
+        owner2.takeCar(car2);
+        owner1.takeCar(car3);
 
-        car1.returnOwner("Emma");
-        car2.returnOwner("Sergii ");
-        car3.returnOwner(owner1, owner2);
 
-        car1.returnOwner("Emma", "John" );
-        car2.returnOwner("Jack", "Mike");
-        car3.returnOwner(owner2 + " ");
+        owner1.returnCar(car1 );
+        owner2.returnCar(car2);
+        owner3.returnCar(car3);
 
     }
 

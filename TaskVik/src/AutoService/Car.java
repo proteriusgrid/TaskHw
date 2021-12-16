@@ -1,6 +1,6 @@
 package TasksHWLOther.AutoService;
 
-public class Car extends Owner {
+public class Car {
     private String brand;
     private int numberCar;
     private String model;
@@ -89,40 +89,7 @@ public class Car extends Owner {
         this.color = color;
     }
 
-    public void takeOwner(String... owners){
-//        System.out.println(this.brand + "took the following owners: ");
-        System.out.println(this.getCarOwner()+ " the cars were taken from the following owners:  ");
-        for (String owner : owners){
-            System.out.println(owner);
-        }
-        System.out.println();
-    }
 
-    public void takeOwner( Owner... owners ){
-        System.out.println(this.brand + " took from the next owner :");
-        for (Owner owner : owners){
-            System.out.println( "Car Owner - " + owner.getCarOwner());
-        }
-        System.out.println();
-    }
-    public  void  returnOwner(int numberCar){
-        System.out.println(this.brand + "returned " + numberCar + "owners");
-    }
-    public void returnOwner(String... owners){
-        System.out.println(this.brand + "returned to the following owners: ");
-        for (String owner : owners){
-            System.out.println(owner);
-        }
-        System.out.println();
-    }
-
-    public void returnOwner( Owner... owners ){
-        System.out.println(this.brand + "the car was returned to the owner as follows:  ");
-        for (Owner owner : owners){
-            System.out.println("Car Owner - " + owner.getCarOwner());
-        }
-        System.out.println();
-    }
 
     public String getInfo(){
         return "{" + "brand " + brand + '\'' + ", number Car = " +numberCar+ ", model " + model +'\''  +", year of manufacture = " + yearOfManufacture+ '\''

@@ -4,9 +4,13 @@ class Cats  {
     private String breed;
     private String name;
 
-    public  Cats(String breed,String name) {
+    private  String color;
+
+    public  Cats(String breed,String name, String color) {
         this.breed = breed;
         this.name = name;
+        this.color = color;
+
 
 
     }
@@ -20,6 +24,6 @@ class Cats  {
     }
 
     public void CatsInfo(){
-        System.out.println("Парода -  " + this.breed +  "; "+ " Кличка: " + this.name +"." );
+        System.out.println("Парода -  " + this.breed +  "; "+ " Кличка: " + this.name +  "; "+" Цвет:  " + this.color + "." );
     }
 }

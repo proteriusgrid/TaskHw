@@ -16,21 +16,21 @@ public class Gitara implements Instrument {
         System.out.println("Играет гитара");
 
     }
-//    @Override
-//    public boolean equals(Object object){
-//        if (this == object ) return true;
-//        if (!(object instanceof  Gitara)) return false;
-//
-//        Gitara gitara= (Gitara) object;
-//        return cordNumber == gitara.cordNumber;
-//
-//    }
-//
-////
-//    @Override
-//    public  int hashCode(){
-//        return cordNumber;
-//    }
+    @Override
+    public boolean equals(Object object){
+        if (this == object ) return true;
+        if (!(object instanceof  Gitara)) return false;
+
+        Gitara gitara= (Gitara) object;
+        return cordNumber == gitara.cordNumber;
+
+    }
+
+
+    @Override
+    public  int hashCode(){
+        return cordNumber;
+    }
 
 
     @Override

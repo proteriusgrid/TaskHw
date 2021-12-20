@@ -5,11 +5,26 @@ public class Main {
 
         Persidska persidska = new Persidska(" Персидський", "Барсик", "Белый");
         persidska.CatsInfo();
+        System.out.println("Цвет : " + persidska.getColor());
 
-        Siamska siamska= new Siamska("Сиамский","Пушок","Светло коричневый" );
-        siamska.CatsInfo();
 
-        YardCats yardCats = new YardCats("Дворовой","Семен","Черный");
+
+
+
+
+        Siamska siamska= new Siamska("Сиамский","Пушок","Светло коричневый");
+
+      siamska.CatsInfo();
+        System.out.println("Цвет :  " + siamska.getColor());
+
+
+
+
+
+        YardCats yardCats = new YardCats("Дворовой","Семен", "Черный ");
         yardCats.CatsInfo();
+          System.out.println("Цвет : " +yardCats.getColor());
+
+
     }
 }

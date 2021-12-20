@@ -15,6 +15,11 @@ class Cats  {
 
     }
 
+    public Cats( String breed, String name ) {
+
+    }
+
+
     public String getBreed() {
         return breed;
     }
@@ -23,7 +28,17 @@ class Cats  {
         this.breed = breed;
     }
 
-    public void CatsInfo(){
-        System.out.println("Парода -  " + this.breed +  "; "+ " Кличка: " + this.name +  "; "+" Цвет:  " + this.color + "." );
+
+
+
+    public String getColor(){
+        return this.color;
     }
+
+    public void CatsInfo(){
+        System.out.println("Парода -  " + this.breed +  "; "+ " Кличка: " + this.name +  "." );
+    }
+
+
+
 }

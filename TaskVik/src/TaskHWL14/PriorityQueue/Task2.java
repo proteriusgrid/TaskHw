@@ -19,4 +19,8 @@ public class Task2 {
         System.out.println("String representation of the Priority Queue: " + string);
 
     }
+
 }
+
+
+// (Task 11 - Write a Java program to convert a Priority Queue elements to a string representation.)

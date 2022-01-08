@@ -1,58 +1,50 @@
 package TaskHWL13New;
 
 public class WrongPasswordException extends Throwable  {
-    int passwordConditionViolated = 0;
+    private String detail;
 
-    public WrongPasswordException (int conditionViolated)
-    {
-        super("Invalid Password: ");
-        passwordConditionViolated = conditionViolated;
+
+    public WrongPasswordException( int conditionViolated ) {
+        detail = printMessage(conditionViolated);
     }
 
-    public String printMessage() {
-        // Call constructor of parent Exception
-        // according to the condition violated
+    public String printMessage(int passwordConditionViolated) {
+
+
         switch (passwordConditionViolated) {
 
-            // Password length should be
-            // between 8 to 20 characters
             case 1:
-                return ("Password length should be"
-                        + " between 8 to 20 characters");
+                return ("Password  length should be equal or more than 20 characters");
 
-            // Password should not contain any space
+
             case 2:
-                return ("Password should not"
-                        + " contain any space");
+                return ("Password should contain only acceptable symbols");
 
-            // Password should contain// at least one digit(0-9)
             case 3:
-                return ("Password should contain"
-                        + " at least one digit(0-9)");
-
-            // Password should contain at least
-            // one special character ( _ )
-            case 4:
-                return ("Password should contain at "
-                        + "least one special character");
-
-            // Password should contain at least
-            // one uppercase letter(A-Z)
-            case 5:
-                return ("Password should contain at"
-                        + " least one uppercase letter(A-Z)");
-
-            // Password should contain at least
-            // one lowercase letter(a-z)
-            case 6:
-                return ("Password should contain at"
-                        + " least one lowercase letter(a-z)");
+                return ("password or password confirmation do not match");
         }
 
         return ("");
 
     }
 
-    public boolean getMessage() {
+
+
+
+    public WrongPasswordException( ) {
+        detail = "Incorrect password";
     }
+
+    @Override
+    public String toString() {
+        return "WrongPasswordException: " + detail+ "} ";
+    }
+
+
+
+
+
+
+
+
 }

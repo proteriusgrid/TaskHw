@@ -1,11 +1,11 @@
 package TaskHWL13New;
 
 public class WrongPasswordException extends Throwable  {
-    private String detail;
+    private String detail1;
 
 
     public WrongPasswordException( int conditionViolated ) {
-        detail = printMessage(conditionViolated);
+        detail1 = printMessage(conditionViolated);
     }
 
     public String printMessage(int passwordConditionViolated) {
@@ -32,12 +32,12 @@ public class WrongPasswordException extends Throwable  {
 
 
     public WrongPasswordException( ) {
-        detail = "Incorrect password";
+        detail1 = "Incorrect password";
     }
 
     @Override
     public String toString() {
-        return "WrongPasswordException: " + detail+ "} ";
+        return "WrongPasswordException: " + detail1+ "} ";
     }
 
 
